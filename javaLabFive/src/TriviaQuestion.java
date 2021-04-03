@@ -71,6 +71,10 @@ public class TriviaQuestion {
 	 */
 	
 	public double getScore(int answer) {
+		// TODO: check if the question has been posed (true); return 0 if not
+		// Q: When are we supposed to check if question is posed?
+		// Q: Why are we checking if the question is posed while getting a score?
+		// (Ref: Lab 5, pg 2, bullet point 3)
 		if (answer == correctAnswer) {
 			score = score + points; 
 			}
