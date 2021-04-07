@@ -99,7 +99,41 @@ public class TriviaQuestion {
 		return System.out.printf("%s\n%s\n%s\n%s\n%s\n", question, answer1, answer2, answer3, answer4);
 				
 	}
+	
 	//MUTATORS FOR QUESTION, ANSWER1, ANSWER2, ANSWER3, ANSWER4, AND POINTS
+	public void setQuestion(String ques) {
+		if (posed == true) {
+			question = ques;
+		}
+	}
 	
+	public void setAnswerOne (String a1) {
+		if (posed == true) {
+			answer1 = a1;
+		}
+	}
 	
+	public void setAnswerTwo (String a2) {
+		if (posed == true) {
+			answer2 = a2;
+		}
+	}
+	
+	public void setAnswerThree (String a3) {
+		if (posed == true) {
+			answer3 = a3;
+		}
+	}
+	
+	public void setAnswerFour (String a4) {
+		if (posed == true) {
+			answer4 = a4;
+		}
+	}
+	
+	public void setPoints (int playerPoints) {
+		if (posed == true) {
+			points = playerPoints;
+		}
+	}
 }
