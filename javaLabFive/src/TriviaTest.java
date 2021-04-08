@@ -17,8 +17,6 @@ public class TriviaTest {
 	public static void main(String[] args) {
 		//Create an object of the TriviaQuestion class with arguments.
 		TriviaQuestion one = new TriviaQuestion("Which 2016 release starred Gal Gadot?", "The Last Yoda", "Batgirl", "Running Man 2049", "Ender's Game", 2, 5);
-		
-		//Line of code with a break point to check the object in the debugger
 				
 		//Mutate all fields
 		
