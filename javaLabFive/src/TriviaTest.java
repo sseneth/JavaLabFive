@@ -19,6 +19,12 @@ public class TriviaTest {
 		TriviaQuestion one = new TriviaQuestion("Which 2016 release starred Gal Gadot?", "The Last Yoda", "Batgirl", "Running Man 2049", "Ender's Game", 2, 5);
 				
 		//Mutate all fields
+		one.setQuestion("Which 2017 release starred Gal Gadot?");
+		one.setAnswerOne("The Last Jedi");
+		one.setAnswerTwo("Wonder Woman");
+		one.setAnswerThree("Blade Runner 2049");
+		one.setAnswerFour("Molly's Game");
+		one.setPoints(10);
 		
 		//Pose the question
 		
