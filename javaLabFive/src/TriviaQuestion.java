@@ -69,23 +69,34 @@ public class TriviaQuestion {
 	 * the getScore method should return 0.
 	 * Use a simple if /else condition to write this.
 	 */
-	
 	public double getScore(int answer) {
-		// TODO: check if the question has been posed (true); return 0 if not
-		// Q: When are we supposed to check if question is posed?
-		// Q: Why are we checking if the question is posed while getting a score?
-		// (Ref: Lab 5, pg 2, bullet point 3)
-		if (answer == correctAnswer) {
+		// idk if this is what she means but this is how I 
+		// interpret it so YOLO
+		if (posed == false) {
+			score = 0;
+		} else if (answer == correctAnswer) {
 			score = score + points; 
-			}
-		else {
+		} else {
 			score = score + 0;
 		}
+		
 		return score;
 	}
 	
+	//getAnswerCountdown()
+	/**
+	 * Gets an input from the user and spits out the answer in an int
+	 * so that getScore() can use it
+	 */
+	public int getAnswerCountdown(){
+		// idk how to fkn java wtf
+		int userInput;
+		// idk some input stream bs here to grab info from the user
+		// if we have time we can do the countdown while() loop
+		return userInput;
+	}
+
 	//poseQuestion ACCESSOR
-	//TODO: Make sure the string return is accurate, fix formatting
 	/**
 	 * Sets the posed field to true and returns a String composed
 	 * of the question and list of answers, formatted as in the
