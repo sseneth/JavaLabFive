@@ -27,22 +27,23 @@ public class TriviaTest {
 		one.setPoints(10);
 		
 		//Pose the question
+		one.poseQuestion();
 		
 		//Print the question, get a correct answer, report the results
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println(one);
 		System.out.println("Please enter the correct answer (2): ");
-		int answer = keyboard.nextInt();
+		int correctAnswer = keyboard.nextInt();
+		one.getScore(correctAnswer);
 		System.out.printf("You scored %d points!", points); 	//Not sure how to get the points to show up in this formatted statement
 		
 		//Print the question, get an incorrect answer, report the results
 		System.out.println(one);
 		System.out.println("Please enter an incorrect answer (anything except 2): ");
-		int answer = keyboard.nextInt();
+		int incorrectAnswer = keyboard.nextInt();
+		one.getScore(incorrectAnswer);
 		System.out.printf("You scored %d points!", points);
-		
-		//Attempt to mutate all fields
-		
+			
 		//Place a line of code with a break point to check object in the debugger
 			
 		}
