@@ -61,55 +61,34 @@ public class TriviaQuestion {
 	}
 	
 	//getScore ACCESSOR
-	/**
-	 * Takes an integer parameter representing an answer,
-	 * compares it to the correct answer, and 
-	 * will return a double score based on whether the
-	 * answer is correct. If the question hasn't been posed,
-	 * the getScore method should return 0.
-	 * Use a simple if /else condition to write this.
-	 */
-	public double getScore(int answer) {
-		// idk if this is what she means but this is how I 
-		// interpret it so YOLO
-		if (posed == false) {
-			score = 0;
-		} else if (answer == correctAnswer) {
-			score = score + points; 
-		} else {
-			score = score + 0;
-		}
-		
-		return score;
-	}
-	
-	//getAnswerCountdown()
-	/**
-	 * Gets an input from the user and spits out the answer in an int
-	 * so that getScore() can use it
-	 */
-	public int getAnswerCountdown(){
-		// idk how to fkn java wtf
-		int userInput;
-		// idk some input stream bs here to grab info from the user
-		// if we have time we can do the countdown while() loop
-		return userInput;
-	}
+        /**
+         * Takes an integer parameter representing an answer,
+         * compares it to the correct answer, and
+         * will return a double score based on whether the
+         * answer is correct. If the question hasn't been posed,
+         * the getScore method should return 0.
+         */
+        public double getScore(int answer) {
+            if (posed && answer == correctAnswer) {
+                score = score + points;
+            } else {
+                score = score + 0;
+            }
+            return score;
+        }
 
-	//poseQuestion ACCESSOR
-	/**
-	 * Sets the posed field to true and returns a String composed
-	 * of the question and list of answers, formatted as in the
-	 * test cases. 
-	 * Use string concatenation (+) and the newline escape sequence (\n)
-	 * to construct the String value that is being returned.
-	 * 
-	 */
-	public PrintStream poseQuestion(boolean posed) {
-		posed = true;
-		return System.out.printf("%s\n%s\n%s\n%s\n%s\n", question, answer1, answer2, answer3, answer4);
-				
-	}
+        //poseQuestion ACCESSOR
+
+        /**
+         * Sets the posed field to true and returns a String composed
+         * of the question and list of answers, formatted as in the
+         * test cases.
+         */
+        public String poseQuestion() {
+            posed = true;
+
+            return question + "\n" + answer1 + "\n" + answer2 + "\n" + answer3 + "\n" + answer4;
+        }
 	
 	//MUTATORS FOR QUESTION, ANSWER1, ANSWER2, ANSWER3, ANSWER4, AND POINTS
 	public void setQuestion(String ques) {
