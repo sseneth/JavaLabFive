@@ -71,6 +71,7 @@ public class TriviaQuestion {
         public double getScore(int answer) {
             if (posed && answer == correctAnswer) {
                 score = score + points;
+		System.out.printf("You scored %d points!", score);
             } else {
                 score = score + 0;
             }
