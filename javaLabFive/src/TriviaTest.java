@@ -35,15 +35,13 @@ public class TriviaTest {
 		System.out.println("Please enter the correct answer (2): ");
 		int correctAnswer = keyboard.nextInt();
 		one.getScore(correctAnswer);
-		System.out.printf("You scored %d points!", points); 	//Not sure how to get the points to show up in this formatted statement
-		
+				
 		//Print the question, get an incorrect answer, report the results
 		System.out.println(one);
 		System.out.println("Please enter an incorrect answer (anything except 2): ");
 		int incorrectAnswer = keyboard.nextInt();
 		one.getScore(incorrectAnswer);
-		System.out.printf("You scored %d points!", points);
-			
+					
 		//Place a line of code with a break point to check object in the debugger
 			
 		}
