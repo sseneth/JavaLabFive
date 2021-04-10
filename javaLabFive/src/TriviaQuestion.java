@@ -1,7 +1,13 @@
 import java.io.PrintStream;
 
 public class TriviaQuestion {
-
+/**
+*This class creates a TriviaQuestion to be used with the TriviaQuiz class
+* @author Kendra
+* @date 4/10/2021
+*/
+	
+	
 	//Fields!
 	private int correctAnswer;
 	private int points;
@@ -96,36 +102,57 @@ public class TriviaQuestion {
         }
 	
 	//MUTATORS FOR QUESTION, ANSWER1, ANSWER2, ANSWER3, ANSWER4, AND POINTS
+	
+        /**
+	* A mutator for the Question object.
+	* @param ques The question being asked.
+	*/
 	public void setQuestion(String ques) {
 		if (posed == true) {
 			question = ques;
 		}
 	}
 	
+        /**
+	* A mutator for the First Answer object.
+	* @param a1 The first answer.
+	*/
 	public void setAnswerOne (String a1) {
 		if (posed != true) {
 			answer1 = a1;
 		}
 	}
-	
+	/**
+	* A mutator for the Second Answer object.
+	* @param a2 The second answer.
+	*/
 	public void setAnswerTwo (String a2) {
 		if (posed != true) {
 			answer2 = a2;
 		}
 	}
-	
+	    /**
+	* A mutator for the Third Answer object.
+	* @param a3 The third answer.
+	*/
 	public void setAnswerThree (String a3) {
 		if (posed != true) {
 			answer3 = a3;
 		}
 	}
-	
+	/**
+	* A mutator for the Fourth Answer object.
+	* @param a4 The fourth answer.
+	*/
 	public void setAnswerFour (String a4) {
 		if (posed != true) {
 			answer4 = a4;
 		}
 	}
-	
+	/**
+	* A mutator for the points object.
+	* @param playerPoints The points awarded for a correct answer.
+	*/
 	public void setPoints (int playerPoints) {
 		if (posed != true) {
 			points = playerPoints;
