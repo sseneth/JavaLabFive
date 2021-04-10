@@ -1,11 +1,7 @@
 /**
-* This is my program made to test out the class I just made to ensure it functions properly.
-* Part of the assignment includes being able to show the TriviaQuestion object in the debugger with the proper
-* values in each object ( see Java Lab Five Instructions, page One, section Two ). 
-* When she says "mutate", I think she means that she wants to change the values of each object to a different question /
-* set of answers than my original parameters in the first part. The different question / answers are as follows:
-* ( "Which 2017 release starred Gal Gadot?", "The Last Jedi", "Wonder Woman", "Blade Runner 2049", "Molly's Game", 2, 10 )
-* 
+* This is a program made to test the TriviaQuiz and TriviaQuestion classes
+* @author Kendra
+* @date 4/10/2021
 */
 
 
@@ -18,7 +14,7 @@ public class TriviaTest {
 		//Create an object of the TriviaQuestion class with arguments.
 		TriviaQuestion one = new TriviaQuestion("\nWhich 2016 release starred Gal Gadot?", "1) The Last Yoda", "2) Batgirl", "3) Running Man 2049", "4) Ender's Game", 2, 5);
 				
-		//Mutate all fields
+		//Attempt to mutate all fields
 		one.setQuestion("\nWhich 2017 release starred Gal Gadot?");
 		one.setAnswerOne("1) The Last Jedi");
 		one.setAnswerTwo("2) Wonder Woman");
