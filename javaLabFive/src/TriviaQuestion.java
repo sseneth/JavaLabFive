@@ -69,12 +69,16 @@ public class TriviaQuestion {
          * the getScore method should return 0.
          */
         public double getScore(int answer) {
-            if (posed && answer == correctAnswer) {
-                score = score + points;
-		System.out.printf("You scored %d points!", score);
-            } else {
-                score = score + 0;
+	
+            if (posed == false){
+		score = 0;
+	    } else if (posed && answer == correctAnswer){
+                score = points;
+	    } else {
+                score = 0;
             }
+	
+	    System.out.printf("You scored %.02f points!\n", score);
             return score;
         }
 
@@ -99,31 +103,31 @@ public class TriviaQuestion {
 	}
 	
 	public void setAnswerOne (String a1) {
-		if (posed == true) {
+		if (posed != true) {
 			answer1 = a1;
 		}
 	}
 	
 	public void setAnswerTwo (String a2) {
-		if (posed == true) {
+		if (posed != true) {
 			answer2 = a2;
 		}
 	}
 	
 	public void setAnswerThree (String a3) {
-		if (posed == true) {
+		if (posed != true) {
 			answer3 = a3;
 		}
 	}
 	
 	public void setAnswerFour (String a4) {
-		if (posed == true) {
+		if (posed != true) {
 			answer4 = a4;
 		}
 	}
 	
 	public void setPoints (int playerPoints) {
-		if (posed == true) {
+		if (posed != true) {
 			points = playerPoints;
 		}
 	}
